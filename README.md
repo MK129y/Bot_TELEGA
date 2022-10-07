@@ -1,5 +1,52 @@
 # Bot_TELEGA
 In fil's bot's
+
+After that declaration, we need to register some so-called message handlers. Message handlers define filters which a message must pass. If a message passes the filter, the decorated function is called and the incoming message is passed as an argument.
+
+Let's define a message handler which handles incoming /start and /help commands.
+A function which is decorated by a message handler can have an arbitrary name, however, it must have only one parameter (the message).
+
+Edited Message handler
+Handle edited messages @bot.edited_message_handler(filters) # <- passes a Message type object to your function
+
+Channel Post handler
+Handle channel post messages @bot.channel_post_handler(filters) # <- passes a Message type object to your function
+
+Edited Channel Post handler
+Handle edited channel post messages @bot.edited_channel_post_handler(filters) # <- passes a Message type object to your function
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+доделать,создать new директорию
+
 В папках представлены боты разного назначения
 
 Бот с викторинами
@@ -63,3 +110,4 @@ REDIS_PORT=порт_до_бд_redis
 Зайдите в раздел Deploy, выберите ветку main в разделе Manual deploy и нажмите на кнопку Deploy Branch
 Перейдите в раздел Resources и включите бота
 Логи можно посмотреть в More -> View logs
+*/
